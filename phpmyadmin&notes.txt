@@ -1,0 +1,58 @@
+1-w anta bt3ml table gdeed w zahrlk error
+(#1075):incorrect table defination there can be only one auto column and it must be defined as key
+ dah ma3nah l phpmyadmin mash ader ye3ml 5owas table mara wa7da fa 23mel table mn 8er 
+autoincrement w mn 8er primary w unique w lma yet3ml 23mlj=hom ba2a mn structure
+
+2-3lshna t5ly l column id y3ed mn awel tany 
+ad5ol 3la table w foo2 fe shreeta dos operations 
+w anzl ta7t 3la shemal
+w doos Empty The Table(Turncate)
+
+3-foreign key types:
+
+**CASCADE:deh lma (bamsa7/23dal) row l feh pk ba2oloh (bamsa7/23dal) row l matwasal beh bl fk
+**RESTRICT:3aks l CASCADE lma (bamsa7/23dal) row l feh pk ba2oloh maynfash (tamsa7/t3dal) l row
+l matwasal bl fk l 7al hena any amsa7 l fk l awel w ba3d keda pk
+**SETNULL:deh lma (bamsa7/23dal) row l feh pk ba2oloh 23mly l row bta3 fk b null
+
+
+4-how to make foreign key:
+alter table table_name add constraint constraint_name foreign key(columnname_fk) 
+references table_name(columnname_pk)
+on update types on delete types
+
+
+
+5-simple query to select connected row pk & fk:
+select users.username,categories.name from users,categories,items where users.userid=items.user_id AND categories.catid=items.cat_id
+
+5-inner join query to select connected row pk & fk:
+select users.username,categories.name from items
+inner join users on  users.userid=items.user_id 
+inner join categories on categories.catid=items.cat_id
+
+
+
+
+
+
+
+
+6-admin lma ydef user l regstatus bta3toh tab2a 1 la2noh hwwa l dyfoh
+anma law user 3aml signup dah hyba2a regstatus bta3toh 0 lesa ba2a admin y3mlo activate
+
+
+7-fe backend l hwa adimn ana 3aml sqlqueries anma fe front end 3ml function maw7da asmha
+ getallfrom
+
+
+
+8-explode('separator','string')//btfsal l string bta3k bta5od string fel klamat kteera mafsool
+//benhom b comma btktb l comma fe seprator w  htfsal l string bt3g3lk fe array
+
+9-end(array)deh btrg3lk 25r 3onsor fe array
+
+
+
+
+
